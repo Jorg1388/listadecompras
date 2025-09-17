@@ -1,0 +1,15 @@
+.seccion-1 {
+    width: 25rem;
+    height: 10rem;
+    border-bottom: 1px solid gainsboro;
+
+    display: flex;
+    margin: auto;
+    margin-top: -3rem;
+}
+
+.titulo1 {
+    margin: auto;
+    margin-top: 6rem;
+    color: green;
+}

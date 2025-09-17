@@ -1,0 +1,25 @@
+header {
+    width: 25rem;
+    height: 4rem;
+    padding: 2rem 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin: auto;
+}
+
+.titulo {
+    font-size: 1.8rem;
+}
+
+.div-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

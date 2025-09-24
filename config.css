@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: pointer;
 }
 
 html {
     font-size: 10px;
     font-family: monospace;
+    margin: auto;
 }
 
-
+@media (max-width: 768px) {
+  body {
+    zoom: 0.9; /* Reduce todo al 80% en pantallas <=768px */
+  }
+  }
 
 
 

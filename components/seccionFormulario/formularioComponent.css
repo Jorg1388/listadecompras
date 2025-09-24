@@ -1,63 +1,84 @@
-.formulario {
-    width: 25rem;
-    height: 5rem;
-
-    display: flex;
-    margin: auto;
-    margin-top: 3rem;
+.contenedor-formulario {
+  max-width: 38rem;
+  padding: 2rem;
+  margin: 5rem auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.producto {
-    width: 25rem;
-    height: 2.8rem;
-    border: 1px solid gray;
-    color: black;
-    font-size: 1.2rem;
-    position: absolute; 
-    outline: none;
+
+.producto, .dinero {
+  width: 100%;
+  height: 3.2rem;
+  padding: 2rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.dinero {
-    width: 15rem;
-    height: 2.8rem;
-    border: 1px solid gray;
-    color: black;
-    font-size: 1.2rem;
-    margin-top: 3.5rem;
-    position: absolute; 
-    outline: none;
+.producto:focus, .dinero:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76,175,80,0.3);
 }
 
 .btn {
-    width: 9.2rem;
-    height: 2.8rem;
-    color: white;
-    background-color: green;
-    font-size: 1.2rem;
-    margin-top: 3.6rem;
-    margin-left: 16rem;
-    border: 0;
-    border-radius: 5px;
-    position: absolute; 
-    outline: none;
-    cursor: pointer;
+  width: 100%;
+  height: 3.2rem;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
 }
 
 .btn:hover {
-    background: red;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  transform: scale(1.05);
 }
 
 .lista {
-  margin-top: 8rem;
+  margin-top: 3rem;
   list-style: none;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
 }
 
 .item-producto {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 10px;
-    border-bottom: 1px solid gainsboro;
-    font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.item-producto:last-child {
+  border-bottom: none;
+}
+
+.producto-eliminar {
+  color: #e74c3c;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.producto-eliminar:hover {
+  transform: scale(1.3);
+  color: #c0392b;
 }

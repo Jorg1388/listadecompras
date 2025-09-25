@@ -3,7 +3,7 @@ import { loadHtmlSectionDownload } from "../sectionDownload/download.js";
 export function header(){
 
     let header = document.createElement('header');
-    header.className = "header";
+    header.className = "header no-captura";
 
     let text = document.createElement('text');
     text.className = "titulo";
